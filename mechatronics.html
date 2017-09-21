@@ -39,12 +39,12 @@
 						  </ul>						  
 						  <hr/>
 						  <h4>IMU Mouse Control</h4>
-						  <a class="image right"><img src="images/gyro_mouse.gif" alt="gyro mouse" width="400" height="400" /></a>
+						  <a class="image right"><img src="images/gyro_mouse.gif" alt="gyro mouse" width="266" height="400" /></a>
 						  <p>The short video displayed, shows the effects of my computer mouse being controlled by an IMU. The IMU is initilaized and sends accelermoter data to the PIC32 microcontroller using I2C, the PIC then transferes that data over USB to the mouse. Specifically the data being listened to is the increase in g-force readings in both the x and y axis. As the magnitude of either increases a proportional value is transmitted over USB and read by the computer as if it were coming from a mouse. The complete code used in this assignment can be seen <b><a href="https://github.com/mariosebasco/ME433_GIT/tree/master/HW9_2/firmware" target="blank"> here </a></b>. A closer look at the code shows that a small LCD screen is also being used. Although not easy to see in the video, the LCD screen also receives data from the IMU using SPI communication. With this data it is able to draw 2 bars that represent axis. Each of these bars also change in size proportional to the g-force measurement readings from the acceleromter data.</p>
 						  
 						  <hr/>
 						  <h4>The Tech Cup</h4>
-						  <a class="image right"><img src="images/car.gif" alt="car" width="40%" height="40%"/></a>
+						  <a class="image"><img src="images/car.gif" alt="car" width="266" height="400"/></a>
 						  <p> As part of a final project in my advanced mechatronics class, students were made to compete in a race. The project setup was as follows, each student has to design and build a car which follows a gray road (as shown in the video), the only restrictions were size constraints of each vehicle. The cars were almost entirely made from scratch. The wheels were 3D printed, the body laser cut from acrylic, the PCBs individually designed in Eagle, and more.  </p>
 						  <p> The bulk of the processing for the car is done in an Android phone. The camera on the phone is used in tracking the road. A simple image processing algorithm scans the image received for the color gray (with sliders available to adust thresholds). The center of mass of the gray pixels is obtained and the difference between it and the center of the screen is taken. This value represents how far away you are from being aligned with the road and is sent over USB to the PIC32 microcontroller which implements a proportional controller in order to decide what PWM signal to send the motors.</p>
 						  <p> Overall the project was a success. The video shows a working prototype a few days before the competition. The final design can be seen on the image. An Android Lego head was added as an ornament. It sits on top of a servo motor and turns to look at the road as the vehicle traverses the course.</p> 
