@@ -39,9 +39,9 @@
 						  </ul>						  
 						  <hr/>
 						  <h4>IMU Mouse Control</h4>
-						  <table align="right">
+						  <table>
 						    <tr>
-						      <td><a class="image"><img src="images/gyro_mouse.gif" alt="gyro mouse" width="266" height="400" /></a></td>
+						      <td align="center"><a class="image"><img src="images/gyro_mouse.gif" alt="gyro mouse" width="266" height="400" /></a></td>
 						    </tr>
 						  </table>
 						  <p>The short video displayed shows the effects of my computer mouse being controlled by an IMU. The IMU is initialized and sends accelermoter data to the PIC32 microcontroller using I2C. The PIC then transferes that data over USB to the mouse. Specifically the data being listened to is the increase in g-force readings in both the horizontal axes. As the magnitude of either increases, a proportional value is transmitted over USB and read by the computer as if it were coming from a mouse. The complete code used in this assignment can be seen <b><a href="https://github.com/mariosebasco/ME433_GIT/tree/master/HW9_2/firmware" target="blank"> here </a></b>. A closer look at the code shows that a small LCD screen is also being used. Although not easy to see in the video, the LCD screen also receives data from the IMU using SPI communication. With this data it is able to draw 2 bars that represent axis. Each of these bars also change in size proportional to the g-force measurement readings from the acceleromter data.</p>
@@ -54,7 +54,7 @@
 						  <p> Overall the project was a success. The video shows a working prototype a few days before the competition. The final design can be seen on the image. An Android Lego head was added as an ornament. It sits on top of a servo motor and turns to look at the road as the vehicle traverses the course.</p>
 						  <table>
 						    <tr>
-						      <td align="center"><a class="image"><img src="images/car_final.jpg" alt="car pic" width="75%" height="75" /></a></td>
+						      <td align="center"><a class="image"><img src="images/car_finish.jpg" alt="car pic" width="75%" height="75%" /></a></td>
 						    </tr>
 						    </table>
 						</div>
