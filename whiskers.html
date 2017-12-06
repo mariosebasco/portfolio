@@ -56,7 +56,7 @@
 							<hr/>
 							<h4> Mechatronics </h4>
 							<p> At the center of the system lies the electronics. Currently there are several key parts to this: The PIC32 microcontroller, an external PWM driver, an H-Bridge circuit, pressure sensor and pumps, servo motors, and smaller more standard components like op amps and potentiometers. </p>
-							<p> </p>
+							<p> Aside from running the main control loop, which will be explained in the next section, the PIC32 is in charge of using I2C communication in order to speak with the external PWM driver, and the ADC in order to receive signals from sensors. The PWM driver mentioned is necessary when a large number of whiskers are being used, as the pressure pumps and servo motors both require PWM input signals. The H-bridge circuits are in charge of driving the small pumps, for which (as with more standard motor control) a pwm signal is used, in which the duty cycle determines the magnitude of the pressure being exerted.  </p>
 							<hr/>
 							<h4> Embedded Programming and Control </h4>
 							
